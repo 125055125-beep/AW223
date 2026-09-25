@@ -57,9 +57,9 @@ header p{
 
 /* Main*/
 main{
-    max-width: 1000px;
+    max-width: 3000px;
     margin: auto;
-    background-color: #b5afb6;
+    background-color: #b2afb6;
 }
 
 /* secciones */
@@ -84,3 +84,100 @@ section h2{
     text-align: center;
 }
 
+.seccion-contenido{
+    max-width: 700px;
+
+}
+
+.seccion-contenido h2{
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.seccion-contenido p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* boton */
+.boton,button{
+    display: inline-block;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #85156e;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    cursor:pointer;
+
+}
+
+.boton:hover,button:hover{
+    background-color: rgb(173, 66, 125);
+    color: black;
+
+}
+/* seccion sobre mi  */
+.sobre-mi-contenido{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 800px;
+    margin: o auto;
+
+}
+.sobre-mi-contenido img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.sobre-mi-contenido p{
+    font-size: 18px;
+
+}
+
+/* habilidades */
+.lista-habilidades{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+.lista-habilidades li{
+    padding: 20px 25px;
+    background-color: rgb(95, 19, 79);
+    border-radius: 10px;
+    font-weight: bold;
+
+}
+/* seccion proyectos */
+.contenedor-proyectos{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.proyecto{
+    flex: 1;
+    min-width: 250px;
+    padding: 25px;
+    border: 1px solid #5c2266;
+    border-radius: 8px;
+    background-color: fuchsia;
+}
+
+.proyecto h3{
+    margin-top: 0;
+    font-size: 22px;
+
+}
+
+.proyecto a{
+    color: darkviolet;
+    font-weight: bold;
+}

@@ -64,7 +64,7 @@ main{
 
 /* secciones */
 section{
-    padding: 60px, 40px;
+    padding: 60px 40px;
     border-bottom: 1px solid #5c2266;
 }
 
@@ -181,3 +181,86 @@ section h2{
     color: darkviolet;
     font-weight: bold;
 }
+
+/* formulario */
+forn{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.campo{
+    margin-bottom: 20px;
+
+}
+
+.campo label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #124427;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.campo textarea{
+    resize: vertical;
+
+}
+
+forn button{
+    width: 100%;
+}
+
+
+/* pie de pagina */
+footer{
+    padding: 30px 20px;
+    text-align: center;
+    background-color: rgb(223, 167, 228);
+    color: rgb(127, 0, 139);
+
+}
+
+footer p{
+     margin: auto5px;
+
+}
+
+/* diseño responsive */
+ @media (max-width: 60px){
+     header h1{
+        font-size: 32px;
+     }
+
+     nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    
+     }
+
+     section{
+        padding: 40px 20px;
+     }
+     .inicio-contenido h2{
+        font-size: 32px;
+     }
+
+     .sobre-mi-contenido{
+        flex-direction: column;
+        text-align: center;
+
+     }
+
+     .contenedor-proyectos{
+        flex-direction: column;
+
+     }
+ }

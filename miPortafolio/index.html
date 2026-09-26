@@ -41,7 +41,7 @@
      <section>
         <h2>Sobre mi</h2>
         <div class="sobre-mi-contenido"> 
-            <img src=""alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOjVrJDzEGcKZElQ_ssjYGZwUEnRp-KFqN9r6f6Cu8vg&s=10" alt=" foto de perfil de schos">
             <div>
                 <p> Algo sobre mi imagen </p>
                 <p> En esta practica  estoy aprendiendo  HTML & CSS</p>
@@ -84,23 +84,42 @@
        </section>
 
        <!--  Seccion Contactos -->
-         <section> 
-            <h2>contactame</h2>
+         <section id="contacto"> 
+            <h2>contacto</h2>
             <form action=""> 
-                <div>
-                    <label for="">nombre</label>
-                    <input type="text">
+                <div class="campo">
+                    <label for="nombre">nombre</label>
+                    <input 
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Escribe tu nombre
+                    ">
                 </div>
 
-            <div>
-                <label for="">Mensajes</label>
-                <textarea row="5"> </textarea>
+             <div>
+                <label for="email">Correo</label>
+                <input 
+                type="email"
+                id="email"
+                name="email"
+                placeholder="ejemplo@correo.com">
             </div>
 
-             <div>
-                <label for="">Correo</label>
-                <input type="text">
+
+            <div class="campo">
+                <label for="mensaje">
+                    Mensajes
+                </label>
+                <textarea 
+                id="mensajes"
+                name="mensaje"
+                row="5"
+                placeholder="Escribe tu mensaje"
+                > </textarea>
             </div>
+
+
             </form>
          </section> 
 
@@ -109,6 +128,8 @@
     
 
 </main>
+
+<!-- pie de pagina -->
 <footer>
     <p>2026 mi portafolio web</p>
     <p>Practica de programacion web todos los derechos reservados</p>

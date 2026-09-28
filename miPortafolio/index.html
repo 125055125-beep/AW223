@@ -3,136 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolip</title>
-    <link rel="stylesheet" href="./CSS/estilos.CSS">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./CSS/estilos.css">
 </head>
 <body>
 
     <!-- aqui esta el encabezado -->
-     <header> 
+    <header>
         <h1>Mi Portafolio</h1>
-        <p> Bienvenido a misitio web personal</p>
-     </header>
+        <p id="mensaje-bienvenida">Bienvenido a mi sitio web personal</p>
+        <button type="button" id="btn-mensaje">Cambiar mensaje</button>
+    </header>
 
-     <!-- aqui comienza la navegación -->
+    <!-- aqui comienza la navegación -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mi</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contactos</a>
+    </nav>
 
-     <nav>
-        <a href="">Inicio </a>
-        <a href="">Sobre mi </a>
-        <a href="">Habilidades</a>
-        <a href="">Proyectos </a>
-        <a href="">Contactos</a>
-     </nav>
+    <!-- Contenido principal -->
+    <main>
 
-     <!-- Contenido principal -->
-
-     <main>
-
-        <section class="seccion-inicio">
-            <div class="seccion-contenido"> 
-                <h2> Hola, soy schoenstatt Judith</h2>
+        <section id="inicio" class="seccion-inicio">
+            <div class="seccion-contenido">
+                <h2>Hola, soy schoenstatt Judith</h2>
                 <p>Soy estudiante de TIID y estoy aprendiendo aplicaciones web</p>
-                <a href=""class="boton"> Ver mis proyectos</a>
-            </div> 
-        </section>
-   
-     <!-- Seccion sobre mi -->
-
-     <section>
-        <h2>Sobre mi</h2>
-        <div class="sobre-mi-contenido"> 
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOjVrJDzEGcKZElQ_ssjYGZwUEnRp-KFqN9r6f6Cu8vg&s=10" alt=" foto de perfil de schos">
-            <div>
-                <p> Algo sobre mi imagen </p>
-                <p> En esta practica  estoy aprendiendo  HTML & CSS</p>
+                <a href="#proyectos" class="boton">Ver mis proyectos</a>
             </div>
-        
-        </div>
+        </section>
 
-     </section>
+        <!-- Seccion sobre mi -->
+        <section id="sobre-mi">
+            <h2>Sobre mi</h2>
+            <div class="sobre-mi-contenido">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOjVrJDzEGcKZElQ_ssjYGZwUEnRp-KFqN9r6f6Cu8vg&s=10" alt="Foto de perfil de schos">
+                <div>
+                    <p>Algo sobre mi imagen</p>
+                    <p>En esta practica estoy aprendiendo HTML & CSS</p>
+                </div>
+            </div>
+        </section>
 
-     <!-- Habilidades -->
+        <!-- Habilidades -->
+        <section id="habilidades">
+            <h2>Mis habilidades</h2>
+            <ul class="lista-habilidades">
+                <li>JAVA</li>
+                <li>Scratch</li>
+                <li>PSint</li>
+                <li>Packet Tracer</li>
+                <li>MySQL</li>
+            </ul>
 
-     <section> 
-          <h2>Mis habilidades</h2>
-          <ul class="lista-habilidades"> 
-            <li> JAVA</li>
-            <li> Scratch</li>
-            <li> PSint</li>
-            <li> Packet Tracer</li>
-            <li> MySQL</li>
-          </ul>
-     </section>
+            <div class="botones-habilidades">
+                <button type="button" id="btn-color">Cambiar color</button>
+                <button type="button" id="btn-fuente">Cambiar tipo de letra</button>
+            </div>
+        </section>
 
-     <!-- Seccion Proyectos  -->
+        <!-- Seccion Proyectos -->
+        <section id="proyectos">
+            <h2>Mis proyectos</h2>
+            <div class="contenedor-proyectos">
+                <article class="proyecto">
+                    <h3>Sistema de algo 1</h3>
+                    <p>Descripcion del sistema</p>
+                    <a href="">Ver proyecto</a>
+                </article>
 
-       <section> 
-         <h2> Mis proyectos </h2>
-         <div class="contenedor-proyectos">
-             <article class="proyecto">
-                <h3> sistema de algo 1</h3>
-                <p>descripcion del sistema</p>
-                <a href=""> Ver proyecto</a>
-             </article>     
+                <article class="proyecto">
+                    <h3>Sistema de algo 2</h3>
+                    <p>Descripcion del sistema</p>
+                    <a href="">Ver proyecto</a>
+                </article>
+            </div>
+        </section>
 
-             <article class="proyecto">
-                <h3> sistema de algo 2</h3>
-                <p>descripcion del sistema</p>
-                <a href=""> Ver proyecto</a>
-             </article>     
-         </div>
-       </section>
-
-       <!--  Seccion Contactos -->
-         <section id="contacto"> 
-            <h2>contacto</h2>
-            <form action=""> 
+        <!-- Seccion Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form id="formulario" novalidate>
                 <div class="campo">
-                    <label for="nombre">nombre</label>
-                    <input 
-                    type="text"
-                    id="nombre"
-                    name="nombre"
-                    placeholder="Escribe tu nombre
-                    ">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+                </div>
+                <div class="campo">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
                 </div>
 
-             <div>
-                <label for="email">Correo</label>
-                <input 
-                type="email"
-                id="email"
-                name="email"
-                placeholder="ejemplo@correo.com">
-            </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea>
+                </div>
 
-
-            <div class="campo">
-                <label for="mensaje">
-                    Mensajes
-                </label>
-                <textarea 
-                id="mensajes"
-                name="mensaje"
-                row="5"
-                placeholder="Escribe tu mensaje"
-                > </textarea>
-            </div>
-
-
+                <button type="submit">Enviar mensaje</button>
             </form>
-         </section> 
+        </section>
 
-         
+    </main>
 
-    
+    <!-- pie de pagina -->
+    <footer>
+        <p>© 2026 Mi Portafolio</p>
+        <p>Práctica de Programación Web</p>
+    </footer>
 
-</main>
-
-<!-- pie de pagina -->
-<footer>
-    <p>2026 mi portafolio web</p>
-    <p>Practica de programacion web todos los derechos reservados</p>
-</footer>
+    <!-- Código JavaScript -->
+    <script src="./JS/script.js"></script>
 </body>
 </html>

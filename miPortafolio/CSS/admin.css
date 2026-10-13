@@ -1,0 +1,109 @@
+/* Icono de la barra de navegación */
+nav a.icono-nav {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+nav a.icono-nav:hover,
+nav a.icono-nav:focus-visible {
+    background-color: rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+    outline: none;
+}
+
+svg.icono {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/*  la tabla o el formulario */
+.tarjeta {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f6eef7;
+    border: 1px solid #5c2266;
+    border-radius: 10px;
+}
+.tarjeta h2 {
+    margin-bottom: 25px;
+}
+
+/* Tabla de mensajes */
+.tabla-contenedor {
+    overflow-x: auto;
+}
+.tabla-mensajes {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+.tabla-mensajes thead {
+    background-color: rgb(95, 19, 79);
+    color: ghostwhite;
+}
+.tabla-mensajes th,
+.tabla-mensajes td {
+    padding: 12px 14px;
+    text-align: left;
+}
+.tabla-mensajes tbody tr:nth-child(even) {
+    background-color: #e6d3e9;
+}
+.tabla-mensajes td.opciones {
+    white-space: nowrap;
+}
+.tabla-mensajes td.opciones a {
+    display: inline-flex;
+    padding: 4px;
+    border-radius: 6px;
+    color: #85156e;
+}
+.tabla-mensajes td.opciones a:hover,
+.tabla-mensajes td.opciones a:focus-visible {
+    background-color: rgb(173, 66, 125);
+    color: ghostwhite;
+    outline: none;
+}
+.tabla-mensajes .vacio {
+    text-align: center;
+    padding: 24px;
+}
+
+/* Formulario de editar */
+#formulario {
+    max-width: 600px;
+    margin: 0 auto;
+}
+#formulario button {
+    width: 100%;
+}
+.campo input:focus,
+.campo textarea:focus {
+    outline: 2px solid #85156e;
+    outline-offset: 1px;
+}
+
+/* Avisos */
+.aviso {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    padding: 12px 15px;
+    border-radius: 5px;
+    background-color: #e8f5e9;
+    color: #1b5e20;
+}
+.aviso.error {
+    background-color: #fdecea;
+    color: #b71c1c;
+}
+
+@media (max-width: 600px) {
+    .tarjeta { padding: 16px; }
+}

@@ -86,23 +86,40 @@
         <!-- Seccion Contacto -->
         <section id="contacto">
             <h2>Contacto</h2>
-            <form id="formulario" novalidate>
+            <form id="formulario" action="guardar_mensaje.php" method= "post">
+
                 <div class="campo">
                     <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+                    <input type="text" 
+                    id="nombre" 
+                    name="txtnombre" 
+                    placeholder="Escribe tu nombre">
                 </div>
+
                 <div class="campo">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="correo" 
+                    id="correo" 
+                    name="txtcorreo" 
+                    placeholder="ejemplo@correo.com">
                 </div>
 
                 <div class="campo">
                     <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea>
+                    <textarea id="mensaje" 
+                    name="txtmensaje"
+                    rows="5"
+                     placeholder="Escribe tu mensaje"></textarea>
                 </div>
 
-                <button type="submit">Enviar mensaje</button>
+                <button type="submit">
+                    Enviar mensaje
+                </button>
+
+
             </form>
+
+
         </section>
 
     </main>
@@ -113,7 +130,8 @@
         <p>Práctica de Programación Web</p>
     </footer>
 
-    <!-- Código JavaScript -->
-    <script src="./JS/script.js"></script>
+    <script src="./js/AlertInsert.js"></script>
+
+   
 </body>
 </html>

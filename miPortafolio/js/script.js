@@ -1,5 +1,5 @@
 /* Cambiar el HTML desde JS */
-const textoBienvenida = document.getElementById("mensaje-bienvenida");
+/* const textoBienvenida = document.getElementById("mensaje-bienvenida");
 const btnMensaje = document.getElementById("btn-mensaje");
 
 const frases = [
@@ -16,7 +16,7 @@ btnMensaje.addEventListener("click", () => {
 });
 
 /* Cambiar el CSS desde JS */
-const cajas = document.querySelectorAll(".lista-habilidades li");
+/* const cajas = document.querySelectorAll(".lista-habilidades li");
 const btnColor = document.getElementById("btn-color");
 const btnFuente = document.getElementById("btn-fuente");
 
@@ -46,7 +46,7 @@ btnFuente.addEventListener("click", () => {
 });
 
 /* formulario*/
-const formulario = document.getElementById("formulario");
+/*const formulario = document.getElementById("formulario");
 const inputNombre = document.getElementById("nombre");
 const inputCorreo = document.getElementById("email");
 
@@ -76,4 +76,4 @@ formulario.addEventListener("submit", (e) => {
 
     alert("Formulario enviado correctamente");
     formulario.reset();
-});
+}); */

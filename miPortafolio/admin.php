@@ -1,5 +1,8 @@
-<?php
 
+<?php
+// admin.php - Zona de administración (Práctica 5)
+// Por ahora los mensajes son datos de ejemplo.
+// En la siguiente práctica se reemplazan por una consulta a la base de datos.
 $mensajes = [
     ['id' => 1, 'nombre' => 'Ana',  'correo' => 'ana@example.com',  'mensaje' => 'Hola, me interesa tu portafolio.'],
     ['id' => 2, 'nombre' => 'José', 'correo' => 'jose@example.com', 'mensaje' => 'Quisiera más información sobre tus proyectos.'],
@@ -23,10 +26,11 @@ $mensajes = [
 
     <nav>
         <!-- Regreso al portafolio -->
-        <a href="index.html" class="icono-nav" title="Volver al portafolio" aria-label="Volver al portafolio">
+        <a href="index.php" class="icono-nav" title="Volver al portafolio" aria-label="Volver al portafolio">
             <svg class="icono" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
         </a>
     </nav>
+
 <!-----principal----->
     <main>
         <section id="mensajes">

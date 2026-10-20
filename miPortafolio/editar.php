@@ -38,7 +38,7 @@ if ($actual && $_SERVER['REQUEST_METHOD'] === 'POST') {
             <svg class="icono" viewBox="0 0 24 24"><path d="M21 12a9 9 0 11-3-6.7"/><path d="M21 3v6h-6"/></svg>
         </a>
         <!-- Regreso al portafolio -->
-        <a href="index.html" class="icono-nav" title="Volver al portafolio" aria-label="Volver al portafolio">
+        <a href="index.php" class="icono-nav" title="Volver al portafolio" aria-label="Volver al portafolio">
             <svg class="icono" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
         </a>
     </nav>

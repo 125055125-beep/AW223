@@ -63,7 +63,10 @@ $mensajes = [
                           <td>" . $arrMensajes['timeStaps'] . "</td>
                           <td>
                           <a href='editar.php?id=" . $arrMensajes['id'] . "' title='Editar'>✎</a>
-                          <a href='borrar.php?id=" . $arrMensajes['id'] . "' title='Borrar'>⌫</a>
+                         <a href='borrar.php?id=" . $arrMensajes['id'] . "' title='Borrar'
+                               onclick=\"return confirm('Estas seguro de borrar este mensaje');\">⌫</a>
+
+
                         </td>
                     </tr>";
                     }?>
@@ -74,9 +77,23 @@ $mensajes = [
     </main>
 
     <footer>
-        <p>© <?= date('Y') ?> Mi Portafolio</p>
-        <p>Práctica de Programación Web</p>
-    </footer>
+        <script>
+    const params = new URLSearchParams(window.location.search);
+    const estado = params.get("estadophp");
 
+    if (estado === "borrado") {
+        alert("El mensaje se borró correctamente");
+    } else if (estado === "error") {
+        alert("No se pudo borrar el mensaje");
+    }
+
+    if (estado) {
+        history.replaceState(null, "", window.location.pathname);
+    }
+</script>
+</footer>
+
+    
+</body>
 </body>
 </html>

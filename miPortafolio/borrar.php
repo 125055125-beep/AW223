@@ -1,14 +1,16 @@
 <?php
+require_once "conexion.php";
 
-require "conexion.php";
- 
-$id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
- 
-if ($id > 0) {
-    $stmt = $conexion->prepare("DELETE FROM mensajes WHERE id = ?");
-    $stmt->bind_param("i", $id);
-    $stmt->execute();
-}
- 
-header("Location: admin.php?msg=borrado");
+$id = (int) ($_GET["id"] ?? 0);
+
+$stmt = $conexion->prepare("DELETE FROM mensajes WHERE id = ?");
+$stmt->bind_param("i", $id);
+
+$estado = $stmt->execute() ? "borrado" : "error";
+
+$stmt->close();
+$conexion->close();
+
+// Regresa al admin para mostrar el alert
+header("Location: admin.php?estadophp=$estado");
 exit;

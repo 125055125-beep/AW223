@@ -1,4 +1,3 @@
-solicitudes.php
 
 <?php
 require_once "consulta_solicitudes.php";
@@ -43,7 +42,6 @@ $etiquetasEstado = [
         <section class="seccion-admin">
             <h2>
                 Nueva solicitud
-                <span class="etiqueta-vista">Admin</span>
             </h2>
 
             <form method="POST" action="registrar_solicitud.php"
@@ -92,7 +90,6 @@ $etiquetasEstado = [
         <section class="seccion-admin">
             <h2>
                 Solicitudes registradas
-                <span class="etiqueta-vista">Admin</span>
             </h2>
 
             <div class="tabla-contenedor">

@@ -1,4 +1,3 @@
-AlertInsert.js
 
 const parametros = new URLSearchParams(window.location.search);
 const estado = parametros.get("estadophp");

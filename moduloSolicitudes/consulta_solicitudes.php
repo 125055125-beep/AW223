@@ -1,11 +1,9 @@
-consulta_solicitudes.php
 
 <?php
 require_once "conexion.php";
 
 // Usuarios disponibles para elegir al solicitante
-function consultaSolicitantes() {
-    global $conexion;
+function consultaSolicitantes() {    global $conexion;
 
     $sql = "SELECT id, nombre, apellido_paterno, apellido_materno
             FROM usuarios

@@ -1,4 +1,3 @@
-registrar_solicitud.php
 
 <?php
 require_once "conexion.php";

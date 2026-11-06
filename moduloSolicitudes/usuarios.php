@@ -40,7 +40,6 @@ $etiquetasDisponibilidad = [
         <section class="seccion-admin">
             <h2>
                 Registro de usuario
-                <span class="etiqueta-vista">Admin</span>
             </h2>
 
             <form method="POST" action="registrar_usuario.php"
@@ -90,7 +89,6 @@ $etiquetasDisponibilidad = [
         <section class="seccion-admin">
             <h2>
                 Usuarios registrados
-                <span class="etiqueta-vista">Admin</span>
             </h2>
 
             <div class="tabla-contenedor">
@@ -130,7 +128,6 @@ $etiquetasDisponibilidad = [
         <section class="seccion-admin">
             <h2>
                 Registro de equipo
-                <span class="etiqueta-vista">Admin</span>
             </h2>
 
             <form method="POST" action="registrar_equipo.php"
@@ -169,7 +166,6 @@ $etiquetasDisponibilidad = [
         <section class="seccion-admin">
             <h2>
                 Listado de equipos
-                <span class="etiqueta-vista">Admin</span>
             </h2>
 
             <div class="tabla-contenedor">

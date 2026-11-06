@@ -1,4 +1,3 @@
-conexion.php
 
 <?php
 $servidor  = "localhost";

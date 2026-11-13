@@ -58,6 +58,37 @@
                 </button>
 
          <!-----Listado------>
+         <section id="listado de gastos">
+        
+            <div class="tarjeta">
+                <h2>Listado de gastos</h2>
+
+                <div class="tabla-contenedor">
+                    <table class="Listado de gastos">
+
+                      <table class="tabla-Gastos">
+                    <thead>
+                        <tr>
+                            <th>Concepto</th>
+
+                            <th>Categoria</th>
+
+                            <th>Monto</th>
+
+                            <th>Fecha</th>
+
+                            <th>Estado</th>
+
+                            <th>Accion</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    
+                   
+
+
 
     
 </body>

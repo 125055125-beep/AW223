@@ -1,0 +1,44 @@
+
+.contenedor {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
+h1 { color: black; font-size: 24px; }
+
+form { display: flex; gap: 10px; margin-bottom: 24px; }
+
+input {
+  flex: 1; padding: 10px;
+  border: 1px solid #ccc; border-radius: 6px;
+}
+
+button {
+  padding: 10px 14px; border: none; border-radius: 6px;
+  background: #137962; color: white; cursor: pointer;
+}
+
+ul { padding: 0; list-style: none; }
+
+.tarjeta {
+  display: flex; gap: 16px; padding: 12px; margin-bottom: 14px;
+  background: white; border: 1px solid #ddd; border-radius: 8px;
+}
+.tarjeta img {
+  width: 200px; height: 140px; object-fit: cover; border-radius: 6px;
+}
+.info { flex: 1; }
+.info h3, .info p { margin: 4px 0; }
+.ubicacion { color: #555; }
+.detalles { background: #eef7f5; padding: 8px; border-radius: 6px; }
+.botones { display: flex; gap: 8px; margin-top: 8px; }
+
+.fav-item {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px; margin-bottom: 8px;
+  border: 1px solid #ddd; border-radius: 8px;
+}
+.fav-item button { margin-left: auto; }
